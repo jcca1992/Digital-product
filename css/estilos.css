@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* ----------------------Variables */
+:root{
+    --green-color:#7acc2d;
+    --white-color:white;
+    --black-color:#313337;
+    /* tipografia */
+    --normal:12px;
+    --medium:17px;
+    --big:30px;
+    
+    /* Espaciado */
+    --space: 10px;
+    --space-2: 20px;
+/* box shadow */
+--box: 0px 3px 6px #00000029
+}
+
+/* ----------------------Fin de Variables */
+
+html,body{
+    padding: 0%;
+    margin: 0%;
+    /* font-size: var(--normal); */
+    font-family: 'Open Sans', sans-serif;
+}
+h3{
+    font-weight: bold;
+}
+p, label{
+    font-size: var(--normal);
+}
+
+img{
+    border-style: none;
+}
+
+nav{
+    display: flex;
+    background: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box);
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+nav li a:hover{
+    color: var(--white-color);
+}
+/* --------------------------------------   Main section */
+
+.main-section{
+    padding: 15%;
+    text-align: center;
+    
+}
+/* .main-section h1{
+    font-size: var(--big);
+    font-weight: bold;
+} */
+.products{
+    display: flex;
+    background-image: url(../images/curve.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 95px;
+    padding: 15%;
+}
+
+.product{
+    padding: var(--space-2);
+    margin-top: -226px;
+
+}
+.content{
+    border-radius: 3px;
+}
+.product .content{
+    background: var(--white-color);
+    padding: 20px;
+    box-shadow: var(--box);
+}
+.img-product{
+    text-align: center;
+
+}
+
+.main-button{
+    background: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--medium);
+    font-weight: bold;
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.main-button:hover{
+    background: #5e9e22;
+}
+/* --------------------------------------   Fin Main section */
+/* --------------------------------------   Beneficios */
+.beneficios{
+    display:flex;
+    padding: 10%;
+}
+.beneficio{
+    text-align: center;
+    padding: 20px;
+}
+.beneficio img{
+    max-height: 100px;
+}
+.text-beneficio{
+    text-align: justify;
+}
+/* --------------------------------------   Fin Beneficios */
+hr{
+    opacity: .2;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+/* --------------------------------------   Inicio Menciones */
+h2.mention-title{
+    text-align: center;
+}
+
+.mentions{
+    display: flex;
+    padding: 5%;
+}
+.mention{
+    padding: var(--space);
+}
+.content-mention{
+    box-shadow: var(--box);
+}
+.mention img{
+    width: 100%;
+}
+.mention .text{
+    padding: var(--space);
+}
+/* --------------------------------------   Inicio Menciones */
+/* --------------------------------------   Inicio venta */
+.modulo-pago{
+    background: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--space);
+}
+.modulo-pago-images{
+    /* max-width: 150px; */
+    text-align: center;
+    width: 100%;
+}
+.data{
+    margin-top: var(--space);
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: .5px solid var(--black-color);
+    box-sizing: border-box;
+}
+.modulo-pago .main-button{
+    margin-top: var(--space);
+}
+/* --------------------------------------   Inicio Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: var(--space-2);
+    font-size: var(--normal);
+}
+.contact a{
+    color: var(--green-color)
+}
+/* --------------------------------------   Fin footer*/

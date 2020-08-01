@@ -178,6 +178,11 @@ h2.mention-title{
 .modulo-pago .main-button{
     margin-top: var(--space);
 }
+
+/* --------------------------------------   Inicio faqs */
+.container h1{
+    border-bottom: 1px solid #929292;
+}
 /* --------------------------------------   Inicio Footer */
 footer{
     display: flex;
@@ -187,7 +192,12 @@ footer{
     padding: var(--space-2);
     font-size: var(--normal);
 }
-.contact a{
+.faqs-footer{
+    position: absolute;
+    bottom: 0;
+    width: 96vw;
+}
+.contact, .option a{
     color: var(--green-color)
 }
 /* --------------------------------------   Fin footer*/
